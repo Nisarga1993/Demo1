@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="73" started-at="2020-02-17T11:51:26Z" finished-at="2020-02-17T11:51:26Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="73" started-at="2020-02-17T11:51:26Z" finished-at="2020-02-17T11:51:26Z">
+      <class name="Scripts.Test1">
+        <test-method status="PASS" signature="congig()[pri:0, instance:Scripts.Test1@2f686d1f]" name="congig" is-config="true" duration-ms="442" started-at="2020-02-17T11:51:26Z" finished-at="2020-02-17T11:51:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- congig -->
+        <test-method status="FAIL" signature="getTest()[pri:0, instance:Scripts.Test1@2f686d1f]" name="getTest" duration-ms="46" started-at="2020-02-17T11:51:26Z" finished-at="2020-02-17T11:51:26Z">
+          <exception class="java.lang.BootstrapMethodError">
+            <message>
+              <![CDATA[java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/WorkbookFactory$CreateWorkbook0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.BootstrapMethodError: java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/WorkbookFactory$CreateWorkbook0
+at org.apache.poi.xssf.usermodel.XSSFWorkbookFactory.<clinit>(XSSFWorkbookFactory.java:34)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:497)
+at org.apache.poi.ss.usermodel.WorkbookFactory.createWorkbook(WorkbookFactory.java:339)
+at org.apache.poi.ss.usermodel.WorkbookFactory.createXSSFWorkbook(WorkbookFactory.java:314)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:232)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:198)
+at com.restAssured.employee.util.ExcelLib.getRequestParameters(ExcelLib.java:29)
+at com.restAssured.employee.util.ApiMethods.executeRequest(ApiMethods.java:24)
+at Scripts.Test1.getTest(Test1.java:22)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:497)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.NoClassDefFoundError: org/apache/poi/ss/usermodel/WorkbookFactory$CreateWorkbook0
+... 37 more
+Caused by: java.lang.ClassNotFoundException: org.apache.poi.ss.usermodel.WorkbookFactory$CreateWorkbook0
+at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+... 37 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.BootstrapMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTest -->
+        <test-method status="PASS" signature="postTest()[pri:0, instance:Scripts.Test1@2f686d1f]" name="postTest" duration-ms="2" started-at="2020-02-17T11:51:26Z" finished-at="2020-02-17T11:51:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTest -->
+      </class> <!-- Scripts.Test1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
