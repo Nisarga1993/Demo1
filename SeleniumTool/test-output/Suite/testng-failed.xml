@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <parameter name="un" value="admin"/>
+  <parameter name="pwd" value="manager"/>
+  <parameter name="url" value="http://localhost/login.do"/>
+  <test name="TestChrome(failed)">
+    <parameter name="un" value="admin"/>
+    <parameter name="pwd" value="manager"/>
+    <parameter name="url" value="http://localhost/login.do"/>
+    <classes>
+      <class name="TestNG.ParallelExec">
+        <methods>
+          <include name="logintest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- TestNG.ParallelExec -->
+    </classes>
+  </test> <!-- TestChrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->

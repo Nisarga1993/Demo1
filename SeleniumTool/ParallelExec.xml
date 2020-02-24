@@ -1,0 +1,11 @@
+
+<suite name="Suite">
+  <test name="TestChrome">
+<parameter name="un" value="admin"/>
+<parameter name="pwd" value="manager"/>
+<parameter name="url" value="http://localhost/login.do"/>
+    <classes>
+      <class name="TestNG.ParallelExec"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
